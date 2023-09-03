@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandRise</title>
+    <script>
+        // window.onload = function() {
+        //     alert("Welcome to our site!");
+        // };
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+        }
+            /* Stilovi za telefone */
+            @media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        text-align: center;
+    }
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .logo img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+    p {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .viral,
+    .shorts,
+    .supercharge,
+    .lead,
+    .framework,
+    .growth-proces {
+        font-size: 20px;
+    }
+    .video-and-promo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+    .video-and-promo iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        height: 300px;
+        width: 400px;
+    }
+    .promo {
+        font-size: 20px;
+        text-align: center;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 150%;
+        margin-left: 30%;
+    }
+    .picture img {
+        max-width: 150%;
+        margin: 10px auto;
+    }
+    .text {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .edit,
+    .growth,
+    .clients {
+        margin-top: 5%;
+    }
+    .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150%;
+        margin-left: -22%;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        gap: 10px;
+    }
+    .lux {
+        order: 1;
+    }
+    .iframe {
+        order: 2;
+        width: 100%;
+    }
+    .hr-line {
+        margin-bottom: 3%;
+    }
+}
+        
+                    /* Stilovi za tablete i manje ekrane */
+                @media (max-width: 768px) {
+                    .container {
+                        padding: 10px;
+                    }
+                    iframe {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .button {
+                        padding: 15px 25px;
+                        font-size: 18px;
+                    }
+                    .picture img {
+                        width: 33.33%;
+                        margin: 5px;
+                    }
+                    .text {
+                        font-size: 25px;
+                    }
+                }
+            
+            /* Stilovi za racunare */
+            .logo {
+                margin-top: 40px;
+                text-align: center;
+            }
+            .logo img {
+                width: 140px;
+                height: 140px;
+                object-fit: contain;
+            }
+            p {
+                color: aliceblue;
+                text-align: center;
+                font-size: 50px;
+                margin-top: 18px;
+            }
+            .viral, .supercharge {
+                color: aliceblue;
+                margin-bottom: 20px;
+            }
+            .promo {
+                font-size: 35px;
+                flex-grow: 1;
+                margin-top: 80px;
+                margin-bottom: 50px;
+            }
+            .video-and-promo {
+                display: flex;
+                align-items: center;
+                gap: 5%;
+            }
+            iframe {
+                width: 150%;
+                height: 430px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            .elevate, .lead, .framework, .growth-proces, .shorts {
+                color: #cc3399;
+            }
+            .button {
+                margin-top: 20px;
+                padding: 20px 30px;
+                background-color: #cc3399;
+                color: #ffffff;
+                border: none;
+                border-radius: 20px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .button a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+            .button:hover {
+                background-color: #ff66cc;
+            }
+            b {
+                font-size: 20px;
+            }
+            .picture {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 10px;
+                margin-bottom: -20px;
+            }
+            .picture img {
+                width: 25%;
+                max-width: 100%;
+                margin: 7px;
+                border-radius: 10px;
+            }
+            .text {
+                margin-top: 10%;
+                font-size: 30px;
+            }
+            .edit {
+                margin-top: 9%;
+            }
+            .growth {
+                margin-top: 8%;
+                margin-bottom: 2%;
+            }
+            .video-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                gap: 10px;
+            }
+            .video-container video {
+                width: calc(23% - 10px);
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 10px;                
+            }
+            .social-link {
+                display: flex;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 100%;
+            }
+            .social-link img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hr-line {
+                margin-bottom: 5%;
+                border: none;
+                border-top: 2px solid #cc3399;
+            }
+            .clients {
+                margin-top: 7%;
+            }
+            .video {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+            .video video {
+                flex: 1;
+                width: 100%;
+                height: 1000px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            .lux {
+                width: 70%;
+                text-align: center;
+                border-radius: 10%;
+                margin-bottom: 20%;
+            }
+            .lux img {
+                max-width: 70%;
+                height: 60%;
+            }
+            .lux-v {
+                margin-bottom: 15%;
+            }
+            video.lux-v {
+                height: 1250px;
+                object-fit: contain;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img width="500" height="500" src="logo" class="attachment-full size-full wp-image-40" alt="Logo">
+        </div>    
+
+        <b><p><span class="viral"> VIRAL </span><span class="shorts"> SHORTS </span><span class="supercharge"> SUPERCHARGE</span></p>
+
+        <div class="video-and-promo">
+            
+            <iframe src="https://www.youtube.com/embed/MMTiAk01KIw" frameborder="0" allowfullscreen></iframe>
+
+            <p class="promo">
+                <span class="elevate">ELEVATE</span> YOUR PERSONAL BRAND INTO AN EFFECTIVE <br><span class="lead"> LEAD-GENERATING POWERHOUSE </span><br>THROUGH OUR ABBREVIATED <span class="framework"> CONTENT FRAMEWORK </span>
+                <br>
+                <button class="button"><a href="https://calendly.com/brandrise/30min"><b>BOOK CALL!</b></a></button>
+            </p>
+
+        </div>
+
+        <div class="growth">
+            <b><p> OUR <span class="growth-proces"> SERVICES: </span></p></b>
+        </div>
+
+        <div class="picture">
+            <img src="scripting.jpg" alt="Scripting">
+            <img src="editing.jpg" alt="Editing">
+            <img src="thumbnail" alt="Thumbnail">
+        </div>
+
+        <div class="">
+            <p class="text">
+                <span class="elevate"> Experience the </span>untapped potential of <span class="elevate"> your personal </span> brand <br>
+                through our revolutionary <span class="elevate">Short-Form Content System. </span><br>
+                <span class="elevate"> Our mission </span> is to transform your audience into a continuous <span class="elevate"> flow of leads, </span><br>
+                elevating <span class="elevate"> your online </span> presence and propelling <span class="elevate">your business </span> to new heights. <br>
+                <span class="elevate"> Utilize our </span> proven method for crafting compelling  and effective <span class="elevate"> short-form content, </span><br>
+                and let us guide you in  <span class="elevate"> shining brightly </span> amidst the <span class="elevate"> digital crowd. </span><br>
+                <span class="elevate">Establish yourself </span> as a respected thought leader in <span class="elevate"> your field with our assistance. </span>
+            </p>
+        </div>
+
+        <div class="edit">
+            <b><p>WANT <span class="elevate"> EDITS </span>LIKE THESE?</p></b>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="goggins brandrise.mp4" type="video/mp4">
+            </video>      
+            <video controls>
+                <source src="CR7 brandrise.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="TATE brandrise.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="kobe brandrise.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="clients">
+
+            <b><p> CLIENTS <span class="elevate"> EXPERIENCE </span> WITH US </p></b>
+
+        </div>
+
+        <hr class="hr-line">
+
+        <div class="video" style="margin-top: 20px;">
+            <div class="lux" >
+                <img src="nova">
+                
+                <hr class="hr-line">
+
+                <p style="font-size: 35px; font-family: 'Pacifico', cursive"> 
+                    Luka Bojović, recognized as Lux27, has pioneered Montenegro's YouTube and influencer scene; 
+                    our partnership involved meticulously creating engaging short video snippets from his YouTube content, 
+                    optimized for platforms like TikTok, thereby enhancing his authentic digital impact. Hear what he had to say about us.
+                </p>
+            </div>
+            <video controls class="lux-v">
+                <source src="lux brandrise final.mp4" type="video/mp4">
+            </video>
+        </div>
+            
+            <div class="social-links" >
+                <a href="https://www.instagram.com/editsbydzony/" class="social-link">
+                    <img src="insta-link" alt="Instagram">
+                </a>
+                <a href="" class="social-link">
+                    <img src="whatsapp" alt="WhatsApp"> 
+                </a>
+                <a href="mailto:brandrise.eu@gmail.com " class="social-link">
+                    <img src="gmail" alt="Gmail">
+                </a>
+        </div>
+    </div>
+</body>
+</html>
